@@ -2,21 +2,21 @@
   "development": {
     "username": "postgres",
     "password": "jacky",
-    "database": "SLP",
+    "database": "Pujas",
     "host": "127.0.0.1",
     "dialect": "postgres"
   },
   "test": {
     "username": "postgres",
     "password": "admin",
-    "database": "SLP_test",
+    "database": "Pujas_test",
     "host": "127.0.0.1",
     "dialect": "postgres"
   },
   "production": {
     "username": "postgres",
     "password": "admin",
-    "database": "SLP_release",
+    "database": "Pujas_release",
     "host": "127.0.0.1",
     "dialect": "postgres"
   }
