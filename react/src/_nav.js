@@ -1,14 +1,16 @@
 import React from 'react'
 import CIcon from '@coreui/icons-react'
 import {
+  cilBasket,
   cilBell,
   cilCalculator,
+  cilCash,
   cilChartPie,
   cilCursor,
   cilDescription,
-  cilDrop,
+  cilDollar,
+  cilHouse,
   cilNotes,
-  cilPencil,
   cilPuzzle,
   cilSpeedometer,
   cilStar,
@@ -28,19 +30,35 @@ const _nav = [
   },
   {
     component: CNavTitle,
-    name: 'Theme',
+    name: 'Inventory',
   },
   {
     component: CNavItem,
-    name: 'Colors',
-    to: '/theme/colors',
-    icon: <CIcon icon={cilDrop} customClassName="nav-icon" />,
+    name: 'Data Barang',
+    to: '/inventory/barang',
+    icon: <CIcon icon={cilBasket} customClassName="nav-icon" />,
   },
   {
     component: CNavItem,
-    name: 'Typography',
-    to: '/theme/typography',
-    icon: <CIcon icon={cilPencil} customClassName="nav-icon" />,
+    name: 'Data Kasir',
+    to: '/inventory/kasir',
+    icon: <CIcon icon={cilCash} customClassName="nav-icon" />,
+  },
+  {
+    component: CNavItem,
+    name: 'Data Tenan',
+    to: '/inventory/tenan',
+    icon: <CIcon icon={cilHouse} customClassName="nav-icon" />,
+  },
+  {
+    component: CNavTitle,
+    name: 'Transactions',
+  },
+  {
+    component: CNavItem,
+    name: 'Data Transaksi',
+    to: '/transactions',
+    icon: <CIcon icon={cilDollar} customClassName="nav-icon" />,
   },
   {
     component: CNavTitle,

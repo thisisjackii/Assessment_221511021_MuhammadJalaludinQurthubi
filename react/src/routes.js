@@ -4,6 +4,14 @@ const Dashboard = React.lazy(() => import('./views/dashboard/Dashboard'))
 const Colors = React.lazy(() => import('./views/theme/colors/Colors'))
 const Typography = React.lazy(() => import('./views/theme/typography/Typography'))
 
+// Inventory
+const Barang = React.lazy(() => import('./views/inventory/barang/Barang'))
+const Kasir = React.lazy(() => import('./views/inventory/kasir/Kasir'))
+const Tenan = React.lazy(() => import('./views/inventory/tenan/Tenan'))
+
+// Transactions
+const Transaksi = React.lazy(() => import('./views/transactions/Transaksi'))
+
 // Base
 const Accordion = React.lazy(() => import('./views/base/accordion/Accordion'))
 const Breadcrumbs = React.lazy(() => import('./views/base/breadcrumbs/Breadcrumbs'))
@@ -56,6 +64,10 @@ const routes = [
   { path: '/theme', name: 'Theme', element: Colors, exact: true },
   { path: '/theme/colors', name: 'Colors', element: Colors },
   { path: '/theme/typography', name: 'Typography', element: Typography },
+  { path: '/inventory/barang/', name: 'Barang', element: Barang },
+  { path: '/inventory/kasir', name: 'Kasir', element: Kasir },
+  { path: '/inventory/tenan', name: 'Tenan', element: Tenan },
+  { path: '/transactions', name: 'Transaksi', element: Transaksi },
   { path: '/base', name: 'Base', element: Cards, exact: true },
   { path: '/base/accordion', name: 'Accordion', element: Accordion },
   { path: '/base/breadcrumbs', name: 'Breadcrumbs', element: Breadcrumbs },
